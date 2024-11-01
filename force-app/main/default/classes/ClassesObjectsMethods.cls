@@ -72,11 +72,11 @@ public with sharing class ClassesObjectsMethods {
         // Initialize a list to store the results
         List<Boolean> contentList = new List<Boolean>(); 
         // Check if the string starts with 'Sales'
-        contentList.add (input.startsWith('Sales'));
+        contentList.add (input.startsWithIgnoreCase('Sales'));
         // Check if the string ends with 'Force'
-        contentList.add (input.endsWith ('Force'));
+        contentList.add (input.endsWithIgnoreCase ('Force'));
         // Check if the string contains 'Awesome'
-        contentList.add (input.contains ('Awesome'));
+        contentList.add (input.containsIgnoreCase ('Awesome'));
         return contentList; // Replace null with the variable you used to store the result
     }
     
